@@ -119,23 +119,3 @@ article{
     }
 }
 
-.buttonChoice{
-    padding: 5px 12px;
-    background-color: #6d6d6d;
-    border-radius: 10px;
-    border-color: #6d6d6d;
-    text-align: center;
-    vertical-align: center;
-    cursor: pointer;
-    transition: all ease 0.5s;
-    width: 300px;
-    height: 80px;
-    margin: 10px 0px 10px 0px;
-    font-size: 30px;
-}
-
-.buttonChoice:hover{
-    border: black;
-    background-color: black;
-    color: #BDBDBD;
-}

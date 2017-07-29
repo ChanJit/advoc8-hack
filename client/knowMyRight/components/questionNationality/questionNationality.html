@@ -1,11 +1,11 @@
 <template name="questionNationality">
   <div>
     <h1>What is your nationality?</h1>
-    <div class="{{styles.trNationality}}">
-      <div class="{{styles.tdNationalityLabel}}">
+    <div class="questionRow">
+      <div class="questionDataLeft">
         <img src="{{nationalityImage}}" style="high:200px;width:300px;" />
       </div>
-      <div class="{{styles.tdNationalityText}}">
+      <div class="questionDataRight">
         <select class="{{styles.nationalityLevelDropDown}}" name="nationalityCategory">
     			  {{#each nationalityLists}}
     				  <option value="{{key}}">{{label}}</option>
@@ -13,8 +13,8 @@
     			</select>
       </div>
     </div>
-    <div style="float:right;padding:1em;">
-        <button type="button" class="btn-green" id="btnNext">Next</button>
+    <div class="divNext">
+        <button type="button" class="buttonNextQuestion" id="btnNext">Next</button>
     </div>
   </div>
 </template>

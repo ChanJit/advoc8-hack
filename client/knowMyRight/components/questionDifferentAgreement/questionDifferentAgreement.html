@@ -1,6 +1,19 @@
 <template name="questionDifferentAgreement">
-  <div >
+  <div>
     <h1>Is your work environment and scope different from what was initially promised?</h1>
-    <button type="button" id="btnNext">Next</button>
+
+    <div class="questionRow">
+      <div class="questionDataLeft">
+        <i class="fa fa-building-o fa-4" aria-hidden="true"></i>
+      </div>
+      <div class="questionDataRight">
+        {{#each yesNoLists}}
+        <input type="radio" name="studyMode" style="margin-top:-3px;" value="{{key}}" /> {{label}} 
+        {{/each}}
+      </div>
+    </div>
+    <div class="divNext">
+      <button type="button" class="buttonNextQuestion" id="btnNext">Next</button>
+    </div>
   </div>
 </template>

@@ -63,6 +63,11 @@ export const NATIONALITY_LIST = [
   { key: "BG", label: "Bangladesh", images:"/images/human-traffic-hack/flag/Bangladesh.gif" }
 ]
 
+export const YES_NO_LIST = [
+  { key: "Y", label: "Yes" },
+  { key: "N", label: "No" }
+]
+
 export const QUALIFICATION_LIST = [
   { key: "PHD", label: "PHD" },
   { key: "MASTERS", label: "Masters" },

@@ -9,8 +9,13 @@ Template.questionNationality.helpers({
     NATIONALITY_LIST.shift();
     return NATIONALITY_LIST;
   },
-  nationalityImage:function(){
-    return Session.get("nationalityImage");
+  nationalityImage: function () {
+    if (Session.get("nationalityImage") !== undefined) {
+      return Session.get("nationalityImage");
+    } else {
+      return "/images/human-traffic-hack/flag/india.png";
+    }
+
   }
 });
 
@@ -25,7 +30,7 @@ Template.questionNationality.events({
     //evt.currentTarget.id
     var arr = Session.get("nationalityCategory");
     var selectedValue = $('[name=nationalityCategory]').val();
-    console.log('selectedValue ==> ',selectedValue);
+    console.log('selectedValue ==> ', selectedValue);
     for (var i = 0, len = NATIONALITY_LIST.length; i < len; i++) {
       if (NATIONALITY_LIST[i].key === selectedValue) {
         Session.set("nationalityImage", NATIONALITY_LIST[i].images);
