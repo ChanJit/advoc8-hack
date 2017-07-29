@@ -1,5 +1,5 @@
 import styles from './userFilter.css';
 
-Template.windBackground.helpers({
+Template.userFilter.helpers({
     styles: styles
 });
