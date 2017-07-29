@@ -50,7 +50,7 @@ export const MONTH_LIST = [{
 ];
 
 export const NATIONALITY_LIST = [
-  { key: "MY", label: "Malaysia", images:"" },
+  { key: "MY", label: "Malaysia", images:"/images/human-traffic-hack/flag/malaysia.svg" },
   { key: "ID", label: "India", images:"/images/human-traffic-hack/flag/india.png" },
   { key: "CH", label: "China", images:"/images/human-traffic-hack/flag/china.jpg" },
   { key: "GH", label: "Ghana", images:"/images/human-traffic-hack/flag/Ghana.jpg" },

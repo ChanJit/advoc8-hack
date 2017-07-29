@@ -6,14 +6,14 @@ import {
 Template.questionNationality.helpers({
   styles: styles,
   nationalityLists: function () {
-    NATIONALITY_LIST.shift();
+    NATIONALITY_LIST;
     return NATIONALITY_LIST;
   },
   nationalityImage: function () {
     if (Session.get("nationalityImage") !== undefined) {
       return Session.get("nationalityImage");
     } else {
-      return "/images/human-traffic-hack/flag/india.png";
+      return "/images/human-traffic-hack/flag/malaysia.svg";
     }
 
   }
