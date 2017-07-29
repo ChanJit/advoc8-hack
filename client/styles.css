@@ -191,3 +191,17 @@ article{
     background-color: black;
     color: #BDBDBD;
 }
+
+:global .radioButton{
+    width:100%;
+    margin:0.5em;
+    background-color: #BDBDBD;
+    color: #4E342E;
+}
+
+:global .radioButton :active{
+    width:100%;
+    margin:0.5em;
+    color: #BDBDBD;
+    background-color: #4E342E;   
+}

@@ -6,9 +6,13 @@
         <i class="fa fa-building-o fa-4" aria-hidden="true"></i>
       </div>
       <div class="questionDataRight">
+        <div class="btn-group" data-toggle="buttons" style="width:100%">
         {{#each workHourLists}}
-        <input type="radio" name="workhour" style="margin-top:-3px;" value="{{key}}" /> {{label}} <br/>
+        <label class="btn btn-success" style="width:100%;margin:0.5em" >
+          <input type="radio" name="workhour" style="margin-top:-3px;" value="{{key}}" /> {{label}}
+        </label>
         {{/each}}
+        </div>
       </div>
     </div>
     <hr style="color:#BDBDBD"/>
@@ -18,9 +22,13 @@
         <i class="fa fa-building-o fa-4" aria-hidden="true"></i>
       </div>
       <div class="questionDataRight">
+        <div class="btn-group" data-toggle="buttons" style="width:100%">
         {{#each workRestLists}}
-        <input type="radio" name="restDay" style="margin-top:-3px;" value="{{key}}" /> {{label}} <br/>
+        <label class="btn btn-success" style="width:100%;margin:0.5em" >
+          <input type="radio" name="restDay" style="margin-top:-3px;" value="{{key}}" /> {{label}}
+        </label>
         {{/each}}
+        </div>
       </div>
     </div>
     <div class="divNext">
