@@ -5,7 +5,6 @@ if (Meteor.isClient) {
   Session.setDefault("questionScareToWork", false);
   Session.setDefault("questionForceToWork", false);
   Session.setDefault("questionWorkingDay", false);
-  Session.setDefault("questionMedicalClaim", false);
   Session.setDefault("questionMeal", false);
   Session.setDefault("questionPayment", false);
   Session.setDefault("questionBankAccount", false);
@@ -27,9 +26,6 @@ if (Meteor.isClient) {
     },
     isForceToWork: function () {
       return Session.get("questionForceToWork");
-    },
-    isMedicalClaim: function () {
-      return Session.get("questionMedicalClaim");
     },
     isMeal: function () {
       return Session.get("questionMeal");
