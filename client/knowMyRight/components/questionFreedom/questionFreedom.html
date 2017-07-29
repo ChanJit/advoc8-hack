@@ -1,6 +1,18 @@
 <template name="questionFreedom">
   <div >
-    <h1>Do you have freedom? do passport and ic still on your hand?</h1>
-    <button type="button" id="btnNext">Next</button>
+    <h1>Are you currently able to hold on to your passport and travel freely? </h1>
+    <div class="questionRow">
+      <div class="questionDataLeft">
+        <i class="fa fa-building-o fa-4" aria-hidden="true"></i>
+      </div>
+      <div class="questionDataRight">
+        {{#each yesNoList}}
+        <input type="radio" name="freedoom" style="margin-top:-3px;" value="{{key}}" /> {{label}} <br/>
+        {{/each}}
+      </div>
+    </div>
+    <div class="divNext">
+      <button type="button" class="buttonNextQuestion" id="btnNext">Next</button>
+    </div>
   </div>
 </template>
