@@ -1,6 +1,6 @@
 .headerWrapper {
     padding: 1rem 0 0;
-    /*background-image: url("images/headerbg2.png");*/
+    background: #263238;
 }
 
 .topLayerContainer {
@@ -26,8 +26,8 @@
 
 .nav {
     composes: container from "../../style.css";
-    background: #77b8cb;
-    color: #09556c;
+    background: #4E342E;
+    color: #BDBDBD;
 }
 
 nav {
@@ -39,7 +39,11 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #09556c;
+    color: #BDBDBD;
+    padding: 0.9em 0;
+}
+nav a :hover{
+    color: #BDBDBD;
     padding: 0.9em 0;
 }
 
