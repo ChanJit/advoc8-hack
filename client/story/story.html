@@ -1,25 +1,21 @@
-<template name="story">  
-    <div class="hi">
-        Story area
-    </div>
-</template>
-
-<template name="userDetails">
-    <div class="{{styles.userDetailsSection}}">
-        <div class="animated fadeInDown {{styles.detailsSectionA}}">
-            <h3>Hello, select your gender</h3>
-            <button type="button" class="{{styles.buttonChoice}}" name="male">Male</button>
-            <button type="button" class="{{styles.buttonChoice}}" name="female">Female</button>
+<template name="story">
+    <div class="{{styles.main}}" id="story">
+        <ul class="nav nav-pills {{styles.tabsSection}}">
+            <li class="active" style="background-color:transparent"><a href="#"  style="background-color:transparent">Chinh</a></li>
+            <li><a href="#">Reyes</a></li>
+            <li><a href="#">Kong</a></li>
+            <li><a href="#">Hafiz</a></li>
+        </ul>
+        <div class="{{styles.storySection}}">
+            {{#each stories}}
+            <p class="animated {{styles.line}}" id={{id}}>{{line}}</p>
+            {{/each}}
+            <div class="animated fadeIn {{styles.userDecision}}">
+                <h3> Are you experiencing the same with Chinh? </h3>
+                <button type="button" class="{{styles.buttonChoice}}" name="yes"><a href="">Yes</a></button><br>
+                <button type="button" class="{{styles.buttonChoice}}" name="no"><a href="">No</a></button>
+            </div>
         </div>
-        <div class="animated fadeInDown {{styles.detailsSectionB}}">
-            <h3>Select your age group</h3>
-            <button type="button" class="{{styles.buttonChoice}}" name="1">>0-17</button><br>
-            <button type="button" class="{{styles.buttonChoice}}" name="2">>18-25</button><br>
-            <button type="button" class="{{styles.buttonChoice}}" name="3">>26-35</button><br>
-            <button type="button" class="{{styles.buttonChoice}}" name="4">> 35</button>
-        </div>
-        <div class="animated fadeInDown {{styles.detailsSectionC}}">
-            
-        </div>
+        
     </div>
 </template>

@@ -1,8 +1,14 @@
 /*Common css file.*/
 
+/* https://github.com/daneden/animate.css */
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *:global {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 body:global {
