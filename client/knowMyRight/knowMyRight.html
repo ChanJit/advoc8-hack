@@ -1,5 +1,16 @@
 <template name="knowMyRight">
-  <div >
+  <div>
     <h1>Knowing your right</h1>
+    {{#if isNationality}} {{>questionNationality}} {{/if}}
+    {{#if isDifferentAgreement}} {{>questionDifferentAgreement}} {{/if}}
+    {{#if isWorkingDays}} {{>questionWorkingDays}} {{/if}}
+    {{#if isScareToWork}} {{>questionScareToWork}} {{/if}}
+    {{#if isForceToWork}} {{>questionForceToWork}} {{/if}}
+    {{#if isMedicalClaim}} {{>questionMedicalClaim}} {{/if}}
+    {{#if isMeal}} {{>questionMeal}} {{/if}}
+    {{#if isPayment}} {{>questionPayment}} {{/if}}
+    {{#if isBankAccount}} {{>questionBankAccount}} {{/if}}
+    {{#if isFreedom}} {{>questionFreedom}} {{/if}}
+    {{#if isConclusion}} {{>conclusion}} {{/if}}
   </div>
 </template>

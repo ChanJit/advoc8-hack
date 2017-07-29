@@ -77,6 +77,12 @@ Router.route('locations', function () {
   this.render('footer', {to: 'footer'});
 });
 
+Router.route('knowMyRight', function () {
+  this.render('header', {to: 'header'});
+  this.render('knowMyRight');
+  this.render('footer', {to: 'footer'});
+});
+
 Router.route('styles', function() {
     this.render('header', {to: 'header'});
     this.render('styles');
