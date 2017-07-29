@@ -1,0 +1,104 @@
+<template name="cheratingBeachViewPage">
+    <div data-content="Warning: Please stay indoor unless you have applied sunscreen" class="{{warningMessage}} {{styles.imageOverlay}}">
+        <div class="btn-group {{styles.btnGroup}}" style="position:absolute" data-toggle="buttons">
+            <label class="btn btn-primary active">
+            <input type="radio" name="date" id="date1" autocomplete="off" checked> 29 Apr 2017
+        </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="date" id="date2" autocomplete="off"> 30 Apr 2017
+        </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="date" id="date3" autocomplete="off"> 1 May 2017
+        </label>
+        </div>
+    <div class={{styles.animatedBeach}} >
+		<div class="{{styles.container}}">
+            <h1 class="{{styles.mainHeader}}">Let's go to<br>Cherating beach.</h1>
+			<video class="{{styles.video}}" autoplay="true" loop="loop">
+				<source src="/video/waves.ogv" type="video/ogg">
+				<source src="/video/waves.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+			</video>
+			<!--<img src="/images/rocks.png" class="{{styles.rocks}}" />-->
+			<audio autoplay="true" loop="loop">
+			  <source src="/audio/bg-sound.mp3" type="audio/mpeg" />
+			</audio>
+			<!--<iframe src="drawing.html" id="drawing" width="630" height="500" style="position:relative; margin:0px 0 0 400px;z-index:2001;"></iframe>-->
+		</div>
+        </div>
+        </div>
+    <div>
+        <div>
+            {{#if isRain}} {{> rainingBackground}} {{/if}} {{#if isSun}} {{> sunBackground}} {{/if}}
+            <!--{{#if isWind}} {{> windBackground}} {{/if}}-->
+        </div>
+
+        <div style="width: 20%;height: 20%;position: absolute;top: 45em; right:10em; z-index: 1;">
+            <img id='imgToast' src='/images/toast-white.png' />
+        </div>
+    </div>
+    {{> HoursDurationFilter}}
+    <br />
+    <div class="{{styles.accordElem}}">
+        <div class="{{styles.accordTitle}}">
+            <h3 class="{{styles.accordLink}}">Suggest sun bath : {{sunBathTimeSuggestion}} </h3>
+        </div>
+        <div class="{{styles.accordTitle}}">
+            <h3 class="{{styles.accordLink}}">Preview sun bath result:
+                <select class="{{styles.qualificationLevelDropDown}}" name="dropDownTime" id="dropDownTime" style="font-size:large">
+    			  {{#each providerTimeLists}}
+    				    <option value="{{key}}">{{label}}</option>
+    			  {{/each}}
+    			</select>
+                {{skinResult}}
+            </h3>
+        </div>
+        <div class="{{styles.accordTitle}}">
+            <h3 class="{{styles.accordLink}}">
+            {{#if finish}}
+            Choice your skin type: 
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active" style="width:85px; height:55px">
+                    <input type="radio" name="skin" id="skin1" autocomplete="off" checked> <img src='/images/toast-white.png' class="imgSize"/>
+                </label>
+                <label class="btn btn-primary" style="width:85px; height:55px">
+                    <input type="radio" name="skin" id="skin2" autocomplete="off"> <img src='/images/toast-yellow.png' class="imgSize"/>
+                </label>
+                <label class="btn btn-primary" style="width:85px; height:55px">
+                    <input type="radio" name="skin" id="skin3" autocomplete="off"> <img src='/images/toast-dark.png' class="imgSize"/>
+                </label>
+            </div>
+            Set Alarm to filp: 
+            <button type="button" class="btn btn-info" id="start">Start</button>
+            {{else}}
+            
+            <div class="{{styles.alarm}}">
+                {{#if done}}
+                Okay, lets flip over 
+                <button type="button" class="btn btn-success" id="turnAlarm">Filpped continue</button>
+                <button type="button" class="btn btn-danger" id="doneAlarm">Stop and done</button>
+                {{else}}
+                Enjoy the sunbath 
+                <div><img src='/images/cat.gif' style="width:85px;"/></div>
+                {{/if}}
+            </div>
+            {{/if}}
+            </h3>
+        </div>
+        {{#if isSafetyRecommendationsDisplay}}
+        <div class="{{styles.accordTitle}}">
+            <h3 class="{{styles.accordLink}}">Safety recommendations</h3>
+        </div>
+        <div class="{{styles.accordContent}}">
+            {{#if needSunglass}}
+            <div class="{{styles.imageContainer}}"><img src="/images/sunglass.png" />Wear sunglasses</div>{{/if}} {{#if suncreamFactorIs "30"}}
+            <div class="{{styles.imageContainer}}"><img src="/images/sunscreen-30.jpg" />Apply a SPF 30 sunscreen</div>{{/if}} {{#if suncreamFactorIs "20"}}
+            <div class="{{styles.imageContainer}}"><img src="/images/sunscreen-20.jpg" />Apply a SPF 20 sunscreen</div>{{/if}} {{#if suncreamFactorIs "10"}}
+            <div class="{{styles.imageContainer}}"><img src="/images/sunscreen-10.jpg" />Apply a SPF 10 sunscreen</div>{{/if}} {{#if needHat}}
+            <div class="{{styles.imageContainer}}"><img src="/images/hat.jpeg" />Cover your head</div>{{/if}} {{#if needShades}}
+            <div class="{{styles.imageContainer}}"><img src="/images/shades.jpg" />Find a shade</div>{{/if}}
+        </div>
+        {{else}}
+        <div class="{{styles.accordContentBottomLine}}"></div>
+        {{/if}}
+    </div>
+</template>
