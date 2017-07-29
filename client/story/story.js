@@ -2,7 +2,7 @@ import styles from './story.css';
 
 var stories = [
     { id: 0, line: "Use earphone to optimize the experience" },
-    { id: 1, line: "Chinh, Vietnamese, 24" }
+    { id: 1, line: "Chinh, Vietnamese, 24" },
     { id: 2, line: "The boat was rocking so hard that Chinh jerked awake. It was dark. He couldn’t see anything but he could hear the breathing sound of humans around him. " },
     { id: 3, line: "In a far corner, he could even hear a wheezing sound that looks like it belonged to an elderly man." },
     { id: 4, line: "“Where am I?”" },
