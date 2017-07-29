@@ -49,6 +49,20 @@ export const MONTH_LIST = [{
 }
 ];
 
+export const NATIONALITY_LIST = [
+  { key: "MY", label: "Malaysia", images:"" },
+  { key: "ID", label: "India", images:"/images/human-traffic-hack/flag/india.png" },
+  { key: "CH", label: "China", images:"/images/human-traffic-hack/flag/china.jpg" },
+  { key: "GH", label: "Ghana", images:"/images/human-traffic-hack/flag/Ghana.jpg" },
+  { key: "UG", label: "Uganda", images:"/images/human-traffic-hack/flag/Uganda.png" },
+  { key: "NE", label: "Nepal", images:"/images/human-traffic-hack/flag/nepal.gif" },
+  { key: "SL", label: "Sri Lanka", images:"/images/human-traffic-hack/flag/Sri Lanka.jpg" },
+  { key: "PK", label: "Pakistan", images:"/images/human-traffic-hack/flag/pakistan.GIF" },
+  { key: "HA", label: "Haiti", images:"/images/human-traffic-hack/flag/haiti.gif" },
+  { key: "BZ", label: "Brazil", images:"/images/human-traffic-hack/flag/Brazil.png" },
+  { key: "BG", label: "Bangladesh", images:"/images/human-traffic-hack/flag/Bangladesh.gif" }
+]
+
 export const QUALIFICATION_LIST = [
   { key: "PHD", label: "PHD" },
   { key: "MASTERS", label: "Masters" },
