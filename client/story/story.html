@@ -1,0 +1,15 @@
+<template name="story">
+    <div class="{{styles.main}}" id="story">
+        <ul class="nav nav-pills {{styles.tabsSection}}">
+            <li class="active"><a href="#">Chinh</a></li>
+            <li><a href="#">Reyes</a></li>
+            <li><a href="#">Kong</a></li>
+            <li><a href="#">Hafiz</a></li>
+        </ul>
+        <div class="{{styles.storySection}}">
+            {{#each stories}}
+            <p class="animated {{styles.line}}" id={{id}}>{{line}}</p>
+            {{/each}}
+        </div>
+    </div>
+</template>
