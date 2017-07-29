@@ -1,7 +1,7 @@
 <template name="story">
     <div class="{{styles.main}}" id="story">
         <ul class="nav nav-pills {{styles.tabsSection}}">
-            <li class="active"><a href="#">Chinh</a></li>
+            <li class="active" style="background-color:transparent"><a href="#"  style="background-color:transparent">Chinh</a></li>
             <li><a href="#">Reyes</a></li>
             <li><a href="#">Kong</a></li>
             <li><a href="#">Hafiz</a></li>
@@ -10,6 +10,12 @@
             {{#each stories}}
             <p class="animated {{styles.line}}" id={{id}}>{{line}}</p>
             {{/each}}
+            <div class="animated fadeIn {{styles.userDecision}}">
+                <h3> Are you experiencing the same with Chinh? </h3>
+                <button type="button" class="{{styles.buttonChoice}}" name="yes"><a href="">Yes</a></button><br>
+                <button type="button" class="{{styles.buttonChoice}}" name="no"><a href="">No</a></button>
+            </div>
         </div>
+        
     </div>
 </template>

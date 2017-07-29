@@ -21,6 +21,15 @@ h3{
     display:inline-block;
 }
 
+.tabsSection li a{
+    color: grey;
+}
+
+.tabsSection li:hover a{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
 .tabsSection li a:active{
     color: #BDBDBD;
 }
@@ -31,6 +40,39 @@ h3{
 }
 
 .line{
+    display: none;
+    width: 100%;
+}
+
+a{
+    color: white;
+}
+
+
+.buttonChoice{
+    padding: 5px 12px;
+    background-color: #6d6d6d;
+    border-color: #6d6d6d;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    width: 300px;
+    height: 80px;
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+    opacity: 0.4;
+    color: white;
+}
+
+.buttonChoice:hover{
+    border: black;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+
+.userDecision{
     display: none;
     width: 100%;
 }
