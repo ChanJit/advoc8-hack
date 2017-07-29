@@ -80,6 +80,13 @@ export const WORK_REST_LIST = [
   { key: "no", label: "No" }
 ]
 
+export const WORK_FEEL_LIST = [
+  { key: "HE", label: "Happy / Excited" },
+  { key: "SN", label: "Scared / Nervous" },
+  { key: "T", label: "Tired" },
+  { key: "S", label: "Sad" }
+]
+
 export const QUALIFICATION_LIST = [
   { key: "PHD", label: "PHD" },
   { key: "MASTERS", label: "Masters" },
