@@ -225,3 +225,8 @@ article{
     text-decoration: none;
     color: #2196F3
 }
+
+:global .logo-size{
+    font-size:125px;
+    color:#4E342E;
+}
