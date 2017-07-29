@@ -27,10 +27,8 @@ Template.questionNationality.events({
   },
   'click [name=nationalityCategory]': function (evt, res) {
     evt.preventDefault();
-    //evt.currentTarget.id
     var arr = Session.get("nationalityCategory");
     var selectedValue = $('[name=nationalityCategory]').val();
-    console.log('selectedValue ==> ', selectedValue);
     for (var i = 0, len = NATIONALITY_LIST.length; i < len; i++) {
       if (NATIONALITY_LIST[i].key === selectedValue) {
         Session.set("nationalityImage", NATIONALITY_LIST[i].images);

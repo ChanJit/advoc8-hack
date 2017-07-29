@@ -68,10 +68,22 @@ export const YES_NO_LIST = [
   { key: "N", label: "No" }
 ]
 
+export const YES_NO_FOOD_LIST = [
+  { key: "Y1", label: "Yes, once a day" },
+  { key: "Y2", label: "Yes, twice a day" },
+  { key: "N", label: "No" }
+]
+
 export const WORK_HOUR_LIST = [
   { key: "L8", label: "8 hour" },
   { key: "8t12", label: "8 - 12 hour" },
   { key: "M12", label: "12 hours and more" }
+]
+
+export const PAYMENT_LIST = [
+  { key: "L1K", label: "Less than RM 1,000 a month" },
+  { key: "M1K", label: "More than RM 1,000 a month" },
+  { key: "NoPAY", label: "No pay (skip question 10)" }
 ]
 
 export const WORK_REST_LIST = [
