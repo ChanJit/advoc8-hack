@@ -68,6 +68,18 @@ export const YES_NO_LIST = [
   { key: "N", label: "No" }
 ]
 
+export const WORK_HOUR_LIST = [
+  { key: "L8", label: "8 hour" },
+  { key: "8t12", label: "8 - 12 hour" },
+  { key: "M12", label: "12 hours and more" }
+]
+
+export const WORK_REST_LIST = [
+  { key: "oneDay", label: "Yes , at least one day per week" },
+  { key: "twoDay", label: "Yes , at least two days per week" },
+  { key: "no", label: "No" }
+]
+
 export const QUALIFICATION_LIST = [
   { key: "PHD", label: "PHD" },
   { key: "MASTERS", label: "Masters" },
