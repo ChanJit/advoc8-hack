@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+
 body{
     color: #BDBDBD;
 }
@@ -6,9 +8,8 @@ h3{
     color: #BDBDBD;
 }
 
-.storySection{
-    color: red;
-    height: 1000px;
+.userDetailsSection{
+     height: 900px; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -17,37 +18,22 @@ h3{
     color: white;
 }
 
-.tabsSection{
-    display:inline-block;
+.detailsSectionA{
+    width: 100%;
+    transition: all ease 3s;
 }
 
-.tabsSection li a{
-    color: grey;
-}
-
-.tabsSection li:hover a{
-    text-decoration: underline;
-    background-color: transparent;
-}
-
-.tabsSection li a:active{
-    color: #BDBDBD;
-}
-
-.main{
-    visibility: hidden;
-    transition: all ease 2s;
-}
-
-.line{
+.detailsSectionB{
     display: none;
     width: 100%;
+    transition: all ease 3s;
 }
 
-a{
-    color: white;
+.detailsSectionC{
+    display: none;
+    width: 100%;
+    transition: all ease 3s;
 }
-
 
 .buttonChoice{
     padding: 5px 12px;
@@ -72,7 +58,12 @@ a{
     color: white;
 }
 
-.userDecision{
-    display: none;
+.storySection{
+    height: 1000px;
     width: 100%;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    transition: all ease 3s;
+    color: white;
 }

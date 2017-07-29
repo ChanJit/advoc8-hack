@@ -1,6 +1,5 @@
 .headerWrapper {
-    padding: 1rem 0 0;
-    background: #263238;
+    background-color: black;
 }
 
 .topLayerContainer {
@@ -26,7 +25,7 @@
 
 .nav {
     composes: container from "../../style.css";
-    background: #4E342E;
+    background-color:black;
     color: #BDBDBD;
 }
 
@@ -40,11 +39,22 @@ nav {
 nav a {
     text-decoration: none;
     color: #BDBDBD;
-    padding: 0.9em 0;
+    padding: 20px;
 }
 nav a :hover{
-    color: #BDBDBD;
+    color: #BDBDBD !important;
     padding: 0.9em 0;
+
+}
+
+a{
+    text-align: center;
+}
+
+a:hover{
+    color: #BDBDBD !important;
+    text-decoration: none;
+    border: 1px solid grey;
 }
 
 .advWrapper {
