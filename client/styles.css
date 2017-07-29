@@ -205,3 +205,23 @@ article{
     color: #BDBDBD;
     background-color: #4E342E;   
 }
+
+:global .radio-btn-size{
+    width: 100%;
+    margin: 0.5em;
+    max-width: 400px;
+}
+
+:global .blueLink{
+    color: #0D47A1
+}
+
+:global .blueLink:hover{
+    text-decoration: none;
+    color: #2196F3
+}
+
+:global .blueLink:visited{
+    text-decoration: none;
+    color: #2196F3
+}
