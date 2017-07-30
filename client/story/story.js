@@ -57,7 +57,7 @@ function displayStory(id){
     }
     let target = $("#"+id);
     let strLen = (target.text()).length;
-    let nextChange = strLen < 30? strLen * 120 : strLen * 65;
+    let nextChange = strLen < 30? strLen * 10 : strLen * 10;
     target.addClass("fadeIn");
     target.css("display","block");
     window.setTimeout(function(){
